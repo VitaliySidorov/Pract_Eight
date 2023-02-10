@@ -78,11 +78,11 @@ void MinSumRow(int[,] array2D) // Метод нахождения строки �
 Console.Clear();
 Console.WriteLine("Программа нахождения строки массива (m,n) с наименьшей суммой элементов.");
 Console.Write("Введите количество строк в массиве (m): ");
-int numString = ReadNumber();
-Console.Write("Введите количество столбцов в массиве (n): ");
 int numRow = ReadNumber();
+Console.Write("Введите количество столбцов в массиве (n): ");
+int numColumn = ReadNumber();
 int min = 0, max = 10; // Границы генерации случайных чисел
-int[,] array2D = FillIntArray2D(numString, numRow, min, max);
+int[,] array2D = FillIntArray2D(numRow, numColumn, min, max);
 Console.WriteLine("\nИсходный массив:");
 PrintArray2D(array2D);
 MinSumRow(array2D);

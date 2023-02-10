@@ -72,11 +72,11 @@ int[,] SortRowDown(int[,] array2Dsort) // Метод пузырьковой со
 Console.Clear();
 Console.WriteLine("Программа упорядочивания по убыванию элементов в строках массива (m,n).");
 Console.Write("Введите количество строк в массиве (m): ");
-int numString = ReadNumber();
-Console.Write("Введите количество столбцов в массиве (n): ");
 int numRow = ReadNumber();
+Console.Write("Введите количество столбцов в массиве (n): ");
+int numColumn = ReadNumber();
 int min = 0, max = 10; // Границы генерации случайных чисел
-int[,] array2D = FillIntArray2D(numString, numRow, min, max);
+int[,] array2D = FillIntArray2D(numRow, numColumn, min, max);
 Console.WriteLine("\nИсходный массив:");
 PrintArray2D(array2D);
 SortRowDown(array2D);
